@@ -111,8 +111,10 @@ def traj_segment_generator(data_index1, env, stochastic, func, data_index2):
 
         if env.VMtobeRemove is None:                # Are there any unselectable machines in the queue
             removeVMindex = None                    # in most cases
-        else: 
+        elif env.VMtobeRemove in env.vm_queues_id: 
             removeVMindex = env.vm_queues_id.index(env.VMtobeRemove)
+        else:
+            removeVMindex = None    
 
         action = pi.act(stochastic, ob, func, removeVMindex)  # output the index of the selected machine
 
