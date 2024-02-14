@@ -100,8 +100,7 @@ def SGP(population, toolbox, cxpb, mutpb, ngen, evalNum, stats=None,
             ind.output5.append(fit[5])  
     # add the real fitness.values to each individual
     for ind in invalid_ind:
-        ind.fitness.values = (np.mean(ind.output1)+np.mean(ind.output2),np.mean(ind.output1),np.mean(ind.output2),\
-                                np.mean(ind.output3),np.mean(ind.output4),np.mean(ind.output5))
+        ind.fitness.values = np.mean(ind.output1)+np.mean(ind.output2),
 
     if halloffame is not None:
         halloffame.update(population)
@@ -147,8 +146,7 @@ def SGP(population, toolbox, cxpb, mutpb, ngen, evalNum, stats=None,
                 ind.output5.append(fit[5])  
         # add the real fitness.values to each individual
         for ind in invalid_ind:
-            ind.fitness.values = (np.mean(ind.output1)+np.mean(ind.output2),np.mean(ind.output1),np.mean(ind.output2),\
-                                    np.mean(ind.output3),np.mean(ind.output4),np.mean(ind.output5))
+            ind.fitness.values = np.mean(ind.output1)+np.mean(ind.output2),
 
         # Update the hall of fame with the generated individuals
         if halloffame is not None:
