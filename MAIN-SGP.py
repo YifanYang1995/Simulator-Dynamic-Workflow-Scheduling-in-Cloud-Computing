@@ -47,10 +47,10 @@ genNum = 100                 # Number of generations + 1
 c_rate = 0.8                # Crossover rate
 m_rate = 0.15               # Mutation rate
 workflow_types = 12         # Number of workflow types in the sampling set
-train_workflowNum = 3     # Number of workflows contained in a training problem instances
+train_workflowNum = 30     # Number of workflows contained in a training problem instances
                             ## i.e., Randomly sampling 30 times from the sampling set.
 elitistNum = 10             # Number of elites saved in each generation
-elite_eval_test = 1         # The top $n$ individuals of each generation will be evaluated in the test set
+elite_eval_test = 3         # The top $n$ individuals of each generation will be evaluated in the test set
 algoName = 'GP'             # Used to name the algorithm, used as the name of the saved file
 
 
