@@ -50,7 +50,7 @@ workflow_types = 12         # Number of workflow types in the sampling set
 train_workflowNum = 30     # Number of workflows contained in a training problem instances
                             ## i.e., Randomly sampling 30 times from the sampling set.
 elitistNum = 10             # Number of elites saved in each generation
-elite_eval_test = 3         # The top $n$ individuals of each generation will be evaluated in the test set
+elite_eval_test = 1         # The top $n$ individuals of each generation will be evaluated in the test set
 algoName = 'GP'             # Used to name the algorithm, used as the name of the saved file
 
 
