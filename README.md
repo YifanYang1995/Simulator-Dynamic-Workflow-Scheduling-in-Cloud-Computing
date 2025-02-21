@@ -1,4 +1,4 @@
-# Simulator - Dynamic Workflow Scheduling in Cloud Computing 
+# Simulator - Deadline-Constrained Dynamic Workflow Scheduling in Cloud Computing (DCDWSC)
 
 Dynamic workflow scheduling (DWS) plays a crucial role in cloud computing. This simulator aims to make intelligent decisions in terms of workflow allocation and VM provisioning by **VM selection rules (VMSRs)**. The objective is to minimize the total costs associated with VM rental fees and deadline violation penalties. Certainly, the objective function can also be customized according to needs.  
 ## Getting started
